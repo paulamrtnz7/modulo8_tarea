@@ -144,7 +144,6 @@ elif menu == "Estadísticas API":
 
         team_info = next((t for t in teams if t["strTeam"] == team_selected), None)
         if team_info:
-            st.image(team_info['strTeamBadge'], width=100)
             st.markdown(f"📍 Estadio: {team_info['strStadium']}")
             st.markdown(f"📅 Fundado: {team_info['intFormedYear']}")
             st.markdown(f"📖 Descripción: {team_info['strDescriptionEN'][:300]}...")
